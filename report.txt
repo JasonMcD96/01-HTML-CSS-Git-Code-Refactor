@@ -1,0 +1,18 @@
+List of errors & changes I have made to HTML and CSS files.
+
+--- HTML ----
+1. Div with class "search engine optimization" now also has ID of the same name.
+2. added alt to search engine optimization img tag.
+3. added alt to online reputation management img tag.
+4. added alt to social media marketing img tag.
+5. Changed title from "website" to Horiseon.
+6. Changed the div with class "header" to an actual header tag.
+7. added class of "navBar" to ul in header. Just as a way to clearly describe the <ul>'s purpose.
+8. added alt to lead generation img tag.
+9. added alt to brand awareness img tag.
+10. added alt to cost management img tag
+11. Changed div with class of 'footer' to an actual footer tag.
+
+---- CSS ----
+1. Due to changing '<div class="header">' to <header>, references of '.header' were changed to 'header'.
+2. Due to changing '<div class="footer">' to <footer>, references of '.footer' were changed to 'footer'.
