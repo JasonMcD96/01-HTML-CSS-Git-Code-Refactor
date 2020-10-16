@@ -1,106 +1,78 @@
 # 01 HTML CSS Git: Code Refactor
 
-## Your Task
-
-**Note**: Be sure to review the [Homework Guide](../04-Important/Homework-Guide/README.md) and the [Good README Guide](../04-Important/Good-README-Guide/README.md) before you start working on this assignment!
-
-This week is an odd-numbered week, so your homework is an on-the-job ticket, which means you'll begin with starter code that you need to modify. This week's homework involves a very important aspect of web development: **accessibility**. 
-
-One of the most common tasks for front-end and junior developers is to take existing code and refactor it (recall that to refactor code is to improve it without changing what it does) to meet a certain set of standards or implement a new technology. In this homework, a marketing agency has hired you to refactor an existing site to make it more accessible. 
-
-Web accessibility is an increasingly important consideration for businesses. It ensures that people with disabilities can access a website using assistive technologies such as video captions, screen readers, and braille keyboards. Making a website accessible is also good for business for many reasons, one of them being that accessible sites are better positioned in search engines like Google. It also helps companies avoid litigation that can occur when people with disabilities cannot access their website.
-
-Even though accessibility is a broad topic that can include complex requirements, your tech lead has given you a small list of specific criteria to satisfy the project. These criteria are documented below in the Acceptance Criteria.
-
-**Important**: An important rule to follow when working with someone else's code is the **Scout Rule**, which recommends that you always leave the code a little cleaner than when you found it.
-
-To impress clients, you should always go the extra mile and improve the codebase for long-term sustainability. For example, make sure that all links are functioning correctly. Also, rework the CSS to make it more efficient by consolidating CSS selectors and properties, organizing them to follow the semantic structure of the HTML elements, and including comments before each element or section of the page.
-
-Are you ready to jump in? Here are this week's homework requirements:
-
-## User Story
+## Description
 
 ```
-AS A marketing agency
-I WANT a codebase that follows accessibility standards
-SO THAT our own site is optimized for search engines
+01 HTML CSS Git: Code Refactor was an exercise for refactoring code. I looked through the HTML file 'index.html' and CSS file 'style.css' to make it more accessible. This included changing tags from one type of tag to another for a better semantics within the HTML file. Such as changing a div tag to an aside. As for the CSS file, I looked for ways to make the references cleaner and to consolidate redundant references.
 ```
 
-## Acceptance Criteria
-
+## Link to Live Webpage
 ```
-GIVEN a webpage meets accessibility standards
-
-WHEN I view the source code
-THEN I find semantic HTML elements
-
-WHEN I view the structure of the HTML elements
-THEN I find that the elements follow a logical structure independent of styling and positioning
-
-WHEN I view the image elements
-THEN I find accessible alt attributes
-
-WHEN I view the heading attributes
-THEN they fall in sequential order
-
-WHEN I view the title element
-THEN I find a concise, descriptive title
+ https://jasonmcd96.github.io/01-HTML-CSS-Git-Code-Refactor/
 ```
 
-## Mock-Up
+## Preview of Webpage
 
-The following image shows the web application's appearance and functionality:
+![code refactor demo](/assets/images/01-html-css-git-homework-demo.png)
 
-![code refactor demo](./Assets/01-html-css-git-homework-demo.png)
+## Report of Changes Made
+```
+This information is also in its own file: report.txt
+
+------------------------------------- HTML --------------------------------------------
+
+1. Div with class "search engine optimization" now also has ID of the same name.
+
+2. added alt to search engine optimization img tag.
+
+3. added alt to online reputation management img tag.
+
+4. added alt to social media marketing img tag.
+
+5. Changed title from "website" to Horiseon.
+
+6. Changed the div with class "header" to an actual header tag.
+
+7. added class of "navBar" to ul in header. Just as a way to clearly describe the <ul>'s purpose.
+
+8. added alt to lead generation img tag.
+
+9. added alt to brand awareness img tag.
+
+10. added alt to cost management img tag
+
+11. Changed div with class of 'footer' to an actual footer tag.
+
+12. Changed div with class 'content' to a main tag for better semantics.
+
+13. Changed div with class 'benefits' to an aside tag for better semantics.
+
+14. Added class of 'navContainer' to div in header
 
 
-## Grading Requirements
+-------------------------------------- CSS --------------------------------------------
 
-This homework is graded based on the following criteria: 
+1. Due to changing '<div class="header">' to <header>, references of '.header' were changed to 'header'.
 
-### Technical Acceptance Criteria: 40%
+2. Due to changing '<div class="footer">' to <footer>, references of '.footer' were changed to 'footer'.
 
-* Satisfies all of the above acceptance criteria plus the following code improvements:
+3. 'header h1 .seo' changed to '.seo' same result with less Code.
 
-  * Application's links all function correctly.
+4. consolidated the 3 references to '.search-engine-optimization', '.online-reputation-management', and '.social-media-marketing' img tags to one reference for the parent class of    
+    all three items: class="content"
 
-  * Application's CSS selectors and properties are consolidated and organized to follow semantic structure.
+5. consolidated the 3 references to 'search-engine-optimization', 'online-reputation-management', and 'social-media-marketing' h2 tags to one reference for the parent class of
+    all three items: class="content"
 
-  * Application's CSS file is properly commented.
+6. Changed reference 'header div' to 'navContainer'
 
-### Deployment: 32%
+7. Changed 'header div ul' to '.navBar'
 
-* Application deployed at live URL.
+8. Consolidated .benfit-lead, brand, and cost into one line '.benefit-lead, .benefit-brand, .benefit-cost' since the 3 seperate references all did the same action.
 
-* Application loads with no errors.
+9. consolidated benefit-lead, brand, and cost references to h3 tags into one reference using the parent class: class=".benfits"
 
-* Application GitHub URL submitted.
+10. consolidated benefit-lead, brand, and cost references to img tags into one reference using the parent class: class=".benfits"
 
-* GitHub repository that contains application code.
-
-### Application Quality: 15%
-
-* Application resembles (at least 90%) screenshots provided in the homework instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality README file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
-- - -
-© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+11. consolidated .search-engine-optimization, .online-reputation-management, .social-media-marketing references into one reference since they were all doing the same thing
+```

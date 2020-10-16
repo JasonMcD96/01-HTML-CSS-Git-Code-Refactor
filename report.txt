@@ -13,7 +13,22 @@ List of errors & changes I have made to HTML and CSS files.
 9. added alt to brand awareness img tag.
 10. added alt to cost management img tag
 11. Changed div with class of 'footer' to an actual footer tag.
+12. Changed div with class 'content' to a main tag for better semantics.
+13. Changed div with class 'benefits' to an aside tag for better semantics.
+14. Added class of 'navContainer' to div in header
 
 ---- CSS ----
 1. Due to changing '<div class="header">' to <header>, references of '.header' were changed to 'header'.
 2. Due to changing '<div class="footer">' to <footer>, references of '.footer' were changed to 'footer'.
+3. 'header h1 .seo' changed to '.seo' same result with less Code.
+4. consolidated the 3 references to '.search-engine-optimization', '.online-reputation-management', and '.social-media-marketing' img tags to one reference for the parent class of    
+    all three items: class="content"
+5. consolidated the 3 references to 'search-engine-optimization', 'online-reputation-management', and 'social-media-marketing' h2 tags to one reference for the parent class of
+    all three items: class="content"
+
+6. Changed reference 'header div' to 'navContainer'
+7. Changed 'header div ul' to '.navBar'
+8. Consolidated .benfit-lead, brand, and cost into one line '.benefit-lead, .benefit-brand, .benefit-cost' since the 3 seperate references all did the same action.
+9. consolidated benefit-lead, brand, and cost references to h3 tags into one reference using the parent class: class=".benfits"
+10. consolidated benefit-lead, brand, and cost references to img tags into one reference using the parent class: class=".benfits"
+11. consolidated .search-engine-optimization, .online-reputation-management, .social-media-marketing references into one reference since they were all doing the same thing
