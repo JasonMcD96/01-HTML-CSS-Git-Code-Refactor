@@ -7,7 +7,8 @@
  the HTML file 'index.html' and CSS file 'style.css' to make it more accessible.  
  This included changing tags from one type of tag to another for a better semantics  
  within the HTML file, such as changing a div tag to an aside. As for the CSS file,  
- I looked for ways to make the references cleaner and to consolidate redundant references.
+ I looked for ways to make the references cleaner and to  
+ consolidate redundant references.
 ```
 
 ## Link to Live Webpage
