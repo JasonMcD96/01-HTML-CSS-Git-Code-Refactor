@@ -3,7 +3,10 @@
 ## Description
 
 ```
-01 HTML CSS Git: Code Refactor was an exercise for refactoring code. I looked through the HTML file 'index.html' and CSS file 'style.css' to make it more accessible. This included changing tags from one type of tag to another for a better semantics within the HTML file. Such as changing a div tag to an aside. As for the CSS file, I looked for ways to make the references cleaner and to consolidate redundant references.
+01 HTML CSS Git: Code Refactor was an exercise for refactoring code. I looked through  
+ the HTML file 'index.html' and CSS file 'style.css' to make it more accessible.   
+ This included changing tags from one type of tag to another for a better semantics within the HTML file, Such as changing a div tag to an aside.  
+ As for the CSS file, I looked for ways to make the references cleaner and to consolidate redundant references.
 ```
 
 ## Link to Live Webpage
