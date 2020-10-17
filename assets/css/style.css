@@ -40,12 +40,12 @@ header h1 {
     display: inline-block;
     margin-left: 25px;
 }
-/* a tags should be white and have no text decoration */
+
 a {
     color: #ffffff;
     text-decoration: none;
 }
-/* p tag elements should start at a font size of 16px */
+
 p {
     font-size: 16px;
 }
